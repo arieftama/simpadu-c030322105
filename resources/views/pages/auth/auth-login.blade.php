@@ -14,11 +14,11 @@
             <h4>Login</h4>
         </div>
 
-        <div class="card-body">
+        <div class="card-body">            
             <form method="POST"
-                action="#"
-                class="needs-validation"
-                novalidate="">
+                action="{{ route('login.store') }}"
+                class="needs-validation">
+                @csrf
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input id="email"
